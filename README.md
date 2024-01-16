@@ -14,7 +14,7 @@ This is a resume builder application built with Vite, React, Firebase, and Tailw
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/resume-builder.git
+   git clone https://github.com/CodexParas/resume-builder.git
    ```
 
 2. Install dependencies:
@@ -44,8 +44,6 @@ This is a resume builder application built with Vite, React, Firebase, and Tailw
    npm run dev
    ```
 
-```
-
 5. Open your browser and visit `http://localhost:5173` to see the app.
 
 ## Usage
@@ -62,4 +60,7 @@ Contributions are welcome! If you have any suggestions or improvements, please c
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+```
+
 ```
