@@ -56,11 +56,3 @@ This is a resume builder application built with Vite, React, Firebase, and Tailw
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, please create a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-```
-
-```
