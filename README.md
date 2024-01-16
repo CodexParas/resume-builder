@@ -38,13 +38,13 @@ This is a resume builder application built with Vite, React, Firebase, and Tailw
    VITE_FIREBASE_APP_ID=your-app-id
    ```
 
-````
-
 4. Start the development server:
 
    ```bash
    npm run dev
-````
+   ```
+
+```
 
 5. Open your browser and visit `http://localhost:5173` to see the app.
 
@@ -62,3 +62,4 @@ Contributions are welcome! If you have any suggestions or improvements, please c
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+```
