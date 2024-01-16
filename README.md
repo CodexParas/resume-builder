@@ -30,12 +30,12 @@ This is a resume builder application built with Vite, React, Firebase, and Tailw
    - Enable Authentication and Firestore in the Firebase console
    - Copy your Firebase project configuration and place them in `.env` as
 
-   ```VITE_FIREBASE_API_KEY=your-api-key
-   VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
-   VITE_FIREBASE_PROJECT_ID=your-project-id
-   VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
-   VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
-   VITE_FIREBASE_APP_ID=your-app-id
+   ```VITE_API_KEY=your-api-key
+   VITE_AUTH_DOMAIN=your-auth-domain
+   VITE_PROJECT_ID=your-project-id
+   VITE_STORAGE_BUCKET=your-storage-bucket
+   VITE_MESSAGING_SENDER_ID=your-messaging-sender-id
+   VITE_APP_ID=your-app-id
    ```
 
 4. Start the development server:
