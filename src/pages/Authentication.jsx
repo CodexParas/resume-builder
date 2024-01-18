@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Logo } from "../assets";
-import { AuthButton, Footer } from "../components";
+import { AuthButton, Footer, MainSpinner } from "../components";
 import { FaGoogle, FaGithub } from "react-icons/fa6";
+import useUser from "../hooks/useUser";
+import { useNavigate } from "react-router-dom";
 
 const Authentication = () => {
+  const { data, error, isLoading } = useUser();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!isLoading && data) {
+      navigate("/", { replace: true });
+    }
+  }, [isLoading, data]);
+  if (isLoading) {
+    return <MainSpinner />;
+  }
+
   return (
     <div className="auth-screen">
       {/* top section */}

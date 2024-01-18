@@ -22,10 +22,22 @@ const AuthButton = ({ Icon, label, provider }) => {
           });
         break;
       case "GithubAuthProvider":
-        console.log("GithubAuthProvider");
+        await signInWithRedirect(auth, githubAuthProvider)
+          .then((result) => {
+            console.log(result);
+          })
+          .catch((error) => {
+            console.log(error.message);
+          });
         break;
       default:
-        console.log("No Provider");
+        await signInWithRedirect(auth, googleAuthProvider)
+          .then((result) => {
+            console.log(result);
+          })
+          .catch((error) => {
+            console.log(error.message);
+          });
     }
   };
   return (
