@@ -72,7 +72,7 @@ const CreateTemplate = () => {
           toast.success("File uploaded successfully!");
           setInterval(() => {
             setimageAsset((prev) => ({ ...prev, isImageLoading: false }));
-          }, 2000);
+          }, 1000);
         }
       );
     } else {
