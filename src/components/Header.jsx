@@ -10,7 +10,7 @@ import { auth } from "../config/firebase.config";
 import { useQueryClient } from "react-query";
 
 const Header = () => {
-  const { data, isLoading, isError } = useUser();
+  const { data, isLoading } = useUser();
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
   const queryClient = useQueryClient();
   const signOutUser = async () => {
