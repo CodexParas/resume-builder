@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import {
   CreateResume,
   CreateTemplate,
-  TemplateDesign,
+  TemplatePage,
   UserProfile,
 } from "../pages";
 
@@ -22,7 +22,7 @@ const Home = () => {
             <Route path="/resume/*" element={<CreateResume />} />
             <Route
               path="/resume-detail/:templateID"
-              element={<TemplateDesign />}
+              element={<TemplatePage />}
             />
           </Routes>
         </Suspense>

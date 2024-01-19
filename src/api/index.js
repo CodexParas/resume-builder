@@ -94,3 +94,12 @@ export const saveToFavourites = async (user, data) => {
       });
   }
 };
+
+export const getTemplateDetails = async (id) => {
+  return new Promise((resolve, reject) => {
+    const unsubscribe = onSnapshot(doc(db, "templates", id), (doc) => {
+      resolve(doc.data());
+    });
+    return unsubscribe;
+  });
+};

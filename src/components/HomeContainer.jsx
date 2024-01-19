@@ -40,14 +40,13 @@ const RenderATemplate = ({ templates }) => {
       {templates && templates.length > 0 ? (
         <React.Fragment>
           <AnimatePresence>
-            {templates &&
-              templates.map((template, index) => (
-                <TemplateDesign
-                  index={index}
-                  key={template._id}
-                  data={template}
-                />
-              ))}
+            {templates.map((template, index) => (
+              <TemplateDesign
+                index={index}
+                key={template._id}
+                data={template}
+              />
+            ))}
           </AnimatePresence>
         </React.Fragment>
       ) : (
