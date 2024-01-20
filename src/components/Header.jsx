@@ -9,6 +9,7 @@ import { fadeInOutWithOpacity, slideUpDownMenu } from "../animations";
 import { auth } from "../config/firebase.config";
 import { useQueryClient } from "react-query";
 import { useFilter } from "../hooks/useFilter";
+import { adminIds } from "../utils/helpers";
 
 const Header = () => {
   const { data, isLoading } = useUser();
@@ -55,7 +56,7 @@ const Header = () => {
               onClick={clearFilter}
               className="w-8 h-8 flex items-center justify-center bg-gray-300 rounded-md cursor-pointer active:scale-95 duration-150"
             >
-              <p className="text-2xl text-black">x</p>
+              <p className="text-2xl text-black">X</p>
             </motion.div>
           )}
         </AnimatePresence>
@@ -125,12 +126,14 @@ const Header = () => {
                         >
                           My Account
                         </Link>
-                        <Link
-                          className="text-txtLight hover:text-txtDark text-base whitespace-nowrap"
-                          to={"/template/create"}
-                        >
-                          Add template
-                        </Link>
+                        {adminIds.includes(data?.uid) && (
+                          <Link
+                            className="text-txtLight hover:text-txtDark text-base whitespace-nowrap"
+                            to={"/template/create"}
+                          >
+                            Add template
+                          </Link>
+                        )}
                         <div
                           className="w-full p-2 border-t border-gray-300 flex items-center justify-between group cursor-pointer"
                           onClick={signOutUser}
